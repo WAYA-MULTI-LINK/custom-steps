@@ -1,0 +1,13 @@
+name: My Custom Step
+description: A custom GitHub Action that processes an input and produces an output
+inputs:
+  my-input:
+    description: The input string to process
+    required: true
+    default: 'Hello, World!'
+outputs:
+  my-output:
+    description: The processed output
+runs:
+  using: node16
+  main: index.js
